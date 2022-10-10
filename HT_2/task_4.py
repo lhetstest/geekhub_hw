@@ -4,5 +4,7 @@ amount = int(input('how many values you got: '))
 
 new_string=''
 for i in range(amount):
-    new_string=new_string.join(input("Enter your value: "))
+    user_input = input('Enter your value: ')
+    
+    new_string += user_input
 print(new_string)
