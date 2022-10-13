@@ -13,4 +13,13 @@ my_dic = {
     "mother": "Lucy"
 }
 
-print(set(my_dic.values()))
+# print(set(my_dic.values()))
+temp = []
+res = dict()
+for key, val in my_dic.items():
+    if val not in temp:
+        temp.append(val)
+        res[key] = val
+
+print(res)
+# result.update(my_dic)
