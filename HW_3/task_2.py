@@ -3,11 +3,9 @@
 
 m_list=[(), ('hey'), ('',), ('ma', 'ke', 'my'), [''], {}, ['d', 'a', 'y'], '', []] 
 
+m_list_new = []
 for item in m_list:
-    if len(item) == 0:
-        m_list.remove(item)
+    if item:
+        m_list_new.append(item)
 
-print(m_list)
-
-print(len([]))
-# this is strange.. 
+print(m_list_new)
