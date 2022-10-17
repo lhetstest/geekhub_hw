@@ -4,10 +4,17 @@ my_dict = {
     "one": 23,
     "two": 3,
     "three": 257,
-    "four": 39
+    "str1": "hello",
+    "four": 39,
+    "boole": True
 }
 
-minimal = min(my_dict.values())
-maximal = max(my_dict.values())
+the_list = []
+for value in my_dict.values(): 
+    if type(value) == int:
+        the_list.append(value)
+
+minimal = min(the_list)
+maximal = max(the_list)
 print('This value is minimal: ', minimal)
 print('This value is maximal: ', maximal)
