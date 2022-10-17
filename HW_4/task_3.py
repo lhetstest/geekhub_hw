@@ -4,3 +4,19 @@
 #     x < y;       вiдповiдь - "у бiльше нiж х на z"
 #     x == y.      відповідь - "х дорівнює y"
 
+def research(x, y): 
+    if x==y:
+        print(f"{x} дорівнює {y}")
+    elif x<y:
+        z=y-x
+        print(f"{y} бiльше нiж {x} на {z}")
+    elif x>y:
+        z=x-y
+        print(f"{х} бiльше нiж {у} на {z}")
+    
+    
+
+x = int(input("type the 1st number: "))
+y = int(input("type the 2nd number: "))
+
+research(x,y)
